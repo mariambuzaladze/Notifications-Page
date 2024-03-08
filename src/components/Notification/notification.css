@@ -1,0 +1,62 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.message {
+  display: flex;
+  border-radius: 8px;
+  gap: 13px;
+  padding: 16px;
+}
+
+.unread {
+  background-color: #f7fafd;
+}
+
+img {
+  width: 39px;
+  height: 39px;
+}
+
+.author {
+  font-size: 14px;
+  font-weight: 800;
+  color: #1c202b;
+}
+
+span {
+  font-weight: 500;
+  color: #5e6778;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 500;
+  color: #939cad;
+}
+
+.private-text {
+  border-radius: 5px;
+  border: solid 1px #dde7ee;
+  background-color: #fff;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5e6778;
+}
+
+.unread .circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #f65552;
+}

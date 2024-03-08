@@ -11,7 +11,9 @@ export default function Page() {
         </div>
         <p className="read">Mark all as read</p>
       </header>
-      <main></main>
+      <main>
+        <Notification />
+      </main>
     </div>
   );
 }

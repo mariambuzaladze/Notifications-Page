@@ -8,9 +8,11 @@ import Nathan from "/images/avatar-nathan-peterson.webp";
 import Anna from "/images/avatar-anna-kim.webp";
 import Picture from "/images/image-chess.webp";
 
-export default function Notification() {
+export default function Notification({ setUnreads }) {
   const read = (event) => {
     event.currentTarget.classList.remove("unread");
+
+    setUnreads((prevUnreads) => prevUnreads - 1);
   };
 
   const data = [

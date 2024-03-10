@@ -2,15 +2,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 24px;
   width: 100%;
+  box-shadow: 0 20px 60px 0 rgba(73, 97, 168, 0.05);
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 15px;
 }
 
 header {
   display: flex;
   align-self: center;
-  gap: 74px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .title {
@@ -41,10 +45,21 @@ h1 {
   font-weight: 500;
   color: #5e6778;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.read:hover {
+  color: #0a327b;
 }
 
 main {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    padding: 30px;
+  }
 }

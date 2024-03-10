@@ -6,6 +6,7 @@ import Rizky from "/images/avatar-rizky-hasanuddin.webp";
 import Kimberly from "/images/avatar-kimberly-smith.webp";
 import Nathan from "/images/avatar-nathan-peterson.webp";
 import Anna from "/images/avatar-anna-kim.webp";
+import Picture from "/images/image-chess.webp";
 
 export default function Notification() {
   const read = (event) => {
@@ -39,6 +40,7 @@ export default function Notification() {
       avatar: Kimberly,
       name: "Kimberly Smith",
       text: "commented on your picture",
+      image: Picture,
     },
     {
       id: 6,
@@ -73,6 +75,8 @@ export default function Notification() {
             {person.message && (
               <div className="private-text">{person.message}</div>
             )}
+
+            {person.image && <img src={person.image} alt="picture" />}
           </div>
         </div>
       ))}
